@@ -1,0 +1,14 @@
+# Crear entorno virtual y activarlo
+python -m venv venv
+# Linux/Mac
+source venv/bin/activate
+# Windows
+venv\Scripts\activate
+
+# Instalar dependencias
+pip install django djangorestframework drf-yasg djangorestframework.authtoken
+
+# Crear proyecto y app
+django-admin startproject api_usuarios
+cd api_usuarios
+python manage.py startapp usuario
